@@ -1,6 +1,6 @@
 # billy-elgeron
 
-> Project for my big friend Nikolas :D he has so much crazy and awesome idea for him future film. 
+> Project for my big friend Nikolas :D he has so much crazy and awesome idea for his future film. 
 
 ## Build Setup
 
