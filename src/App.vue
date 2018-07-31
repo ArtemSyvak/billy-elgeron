@@ -1,12 +1,23 @@
 <template>
   <div id="app">
     <router-view/>
+    <CanvasMotionGraphic/>
+    <!--<CrazyMotionGraphic/>-->
   </div>
 </template>
 
+
 <script>
+
+import CanvasMotionGraphic from '@/components/CanvasMotionGraphic'
+import CrazyMotionGraphic from '@/components/CrazyMotionGraphic'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    CanvasMotionGraphic,
+    CrazyMotionGraphic
+  }
 }
 </script>
 

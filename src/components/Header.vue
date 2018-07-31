@@ -65,7 +65,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .header{
+    margin-left: 0;
+    margin-right: 0;
+    position: fixed;
+    z-index: 99999;
+    width:100%;
+  }
   /*animation for hamburger*/
 
   $speed: 200ms;
