@@ -24,10 +24,8 @@
       <a class="navbar-brand logo-name" href="#">Elgeron</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
+        <!--<span class="navbar-toggler-icon"></span>-->
+        <span class="icon-bar"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -85,48 +83,55 @@ export default {
     overflow: hidden;
 
     .icon-bar {
-      width: 100%;
+      position: absolute;
+      width: 30px;
       height: 2px;
       background-color: #000;
-      transition: opacity, transform;
-      transition-duration: $speed;
-      transition-timing-function: $easing;
+      transition: 0.3s;
+        &::after,
+        &::before{
+          left: 0;
+          margin: 13px 0;
+          background-color: #000;
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 2px;
+          transition: 0.6s;
+        }
+        &::after{
+          top:-5px;
+        }
+        &::before{
+          bottom: -5px;
+        }
     }
+    &:not(.collapsed){
+      span.icon-bar{
+          width: 0;
+          transition: 0.3s;
+          &:after{
+            width: 30px;
+            display: block!important;
+            transform: rotate(-45deg);
+            top: -11px;
+            left: 2px;
+            transition: 0.4s;
+            transition-delay: 0.2s;
+          }
+          &:before{
+            width: 30px;
+            display: block!important;
+            left: 2px;
+            transform: rotate(45deg);
+            bottom: -15px;
+            transition: 0.4s;
+            transition-delay: 0.2s;
+          }
 
-    &:not(.collapsed) {
-      .icon-bar {
-        &:nth-child(1) {
-          transform: translateY(6px) rotate(45deg);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-          transform: translateX(-100%);
-        }
-        &:nth-child(3) {
-          transform: translateY(-6px) rotate(-45deg);
-        }
       }
     }
   }
-  /*@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";*/
-  /*svg g path:nth-child(1n){*/
-    /*animation: pulse 4s 1s infinite;*/
-  /*}*/
-  /*svg g path:nth-child(2n){*/
-    /*animation: pulse 4s 2s infinite;*/
-  /*}*/
-  /*svg g path:nth-child(3n){*/
-    /*animation: pulse 4s 3s infinite;*/
-  /*}*/
-
-  /*@keyframes pulse{*/
-    /*0% {*/
-      /*opacity: 0;*/
-    /*}*/
-    /*100% {*/
-      /*opacity: 1;*/
-    /*}*/
-  /*}*/
   .brand-image{
     background-color: #f9ed37;
   }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <CanvasMotionGraphic/>
+    <!--<CanvasMotionGraphic/>-->
     <!--<CrazyMotionGraphic/>-->
   </div>
 </template>
