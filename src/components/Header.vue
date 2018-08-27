@@ -24,7 +24,6 @@
       <a class="navbar-brand logo-name" href="#">Elgeron</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <!--<span class="navbar-toggler-icon"></span>-->
         <span class="icon-bar"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -61,8 +60,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
   *{
     margin: 0;
     padding: 0;
@@ -74,15 +73,13 @@ export default {
     z-index: 99999;
     width:100%;
   }
+
+
   /*animation for hamburger*/
-
-  $speed: 200ms;
-  $easing: cubic-bezier(0.7, 0, 0, 0.7);
-
   .navbar-toggler{
     overflow: hidden;
 
-    .icon-bar {
+    .icon-bar{
       position: absolute;
       width: 30px;
       height: 2px;
@@ -106,7 +103,7 @@ export default {
           bottom: -5px;
         }
     }
-    &:not(.collapsed){
+    &[aria-expanded="true"]{
       span.icon-bar{
           width: 0;
           transition: 0.3s;
@@ -132,6 +129,8 @@ export default {
       }
     }
   }
+
+
   .brand-image{
     background-color: #f9ed37;
   }
@@ -167,15 +166,6 @@ export default {
     transition: 0.1s ease;
     fill: transparent;
   }
-  /*svg g path:nth-child(1n){*/
-  /*fill: azure;*/
-  /*}*/
-  /*svg g path:nth-child(2n){*/
-  /*fill: crimson;*/
-  /*}*/
-  /*svg g path:nth-child(3n){*/
-  /*fill: aqua;*/
-  /*}*/
   .navbar-light .navbar-toggler{
     border: 0;
     outline:none;
@@ -197,32 +187,6 @@ export default {
       a{
         padding: 10px;
       }
-    }
-    .navbar-toggle span.icon-bar {
-      transition: all 0.15s;
-    }
-
-    .navbar-toggle span:nth-child(2) {
-      transform: rotate(45deg);
-      transform-origin: 10% 10%;
-    }
-
-    .navbar-toggle span:nth-child(3) {
-      opacity: 0;
-    }
-
-    .navbar-toggle span:nth-child(4) {
-      transform: rotate(-45deg);
-      transform-origin: 10% 90%;
-    }
-
-    .navbar-toggle.collapsed span:nth-child(2),
-    .navbar-toggle.collapsed span:nth-child(4) {
-      transform: rotate(0);
-    }
-
-    .navbar-toggle.collapsed span:nth-child(3) {
-      opacity: 1;
     }
   }
 </style>
