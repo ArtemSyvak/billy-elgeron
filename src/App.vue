@@ -14,7 +14,6 @@
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
 
-
 export default {
   name: 'App',
   components:{
@@ -25,8 +24,14 @@ export default {
 </script>
 
 <style>
+  html{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
   body{
-    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

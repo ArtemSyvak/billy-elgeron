@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/">
         <div class="logo">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000"
@@ -21,7 +21,7 @@
           </svg>
         </div>
       </a>
-      <a class="navbar-brand logo-name" href="#">Elgeron</a>
+      <a class="navbar-brand logo-name" href="/">Elgeron</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
@@ -29,19 +29,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active ">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Головна</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Проекти</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Про нас</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Find Us</a>
+            <a class="nav-link" href="#">Контакти</a>
           </li>
         </ul>
       </div>
@@ -73,7 +70,6 @@ export default {
     z-index: 99999;
     width:100%;
   }
-
 
   /*animation for hamburger*/
   .navbar-toggler{
@@ -139,7 +135,9 @@ export default {
     padding: 0 100px;
     margin: 0;
     a{
-      font-family: 'Bungee Shade', cursive;
+      &.logo-name{
+        font-family: 'Bungee Shade', cursive;
+      }
       color: #000;
       border-bottom:1px solid transparent;
       padding: 0 0 5px 0;
