@@ -1,10 +1,19 @@
 <template>
     <section id="services">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3"></div>
+        <div class="row justify-content-center py-3">
+          <div class="col-4">Що ми робимо?</div>
+        </div>
+        <div class="row justify-content-center py-3">
+          <div class="col-lg-3">
+            Зйомка реклами
+          </div>
+          <div class="col-lg-3">
+            Фотосети
+          </div>
+          <div class="col-lg-3">
+            Написання сценаріїв
+          </div>
         </div>
       </div>
     </section>
@@ -17,5 +26,10 @@
 </script>
 
 <style scoped>
-
+  #services{
+    top: -15px;
+    position: relative;
+    background-color: royalblue;
+    z-index: 10;
+  }
 </style>

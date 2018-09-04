@@ -4,6 +4,7 @@
     <!--<router-view/>-->
     <Header/>
     <Banner/>
+    <Services/>
   </div>
 
 </template>
@@ -13,12 +14,14 @@
 
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
+import Services from '@/components/Services'
 
 export default {
   name: 'App',
   components:{
     Header,
-    Banner
+    Banner,
+    Services
   }
 }
 </script>

@@ -1,11 +1,10 @@
 <template>
    <section id="banner">
-     <div class="parallax-header">
-       <h1>Who is Elgeron?</h1>
-       <p>Let`s try imagine</p>
-       <div class="layer"></div>
-     </div>
-
+       <div class="parallax-header">
+         <h1>Who is Elgeron?</h1>
+         <p>Let`s try imagine</p>
+         <div class="layer"></div>
+       </div>
    </section>
 </template>
 
@@ -16,7 +15,6 @@
 </script>
 
 <style scoped lang="scss">
-
   #banner{
     color: #fff;
     overflow-y: scroll;
@@ -26,13 +24,6 @@
     /*removed scrollbar*/
     &::-webkit-scrollbar {
       width: 0px;
-    }
-
-    img{
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-
     }
 
     .parallax-header{
@@ -57,9 +48,7 @@
         background-size: cover;
         transform: translateZ(-1px) scale(2);
       }
-      & h1{
-        margin-top: -100px;
-      }
+
     }
     .layer{
       position: absolute;
