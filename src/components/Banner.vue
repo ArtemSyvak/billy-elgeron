@@ -17,9 +17,9 @@
 <style scoped lang="scss">
   #banner{
     color: #fff;
-    overflow-y: scroll;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    /*overflow-y: scroll;*/
+    /*perspective: 1px;*/
+    /*transform-style: preserve-3d;*/
 
     /*removed scrollbar*/
     &::-webkit-scrollbar {
@@ -28,7 +28,7 @@
 
     .parallax-header{
       box-sizing: border-box;
-      min-height: 100vh;
+      height: 100vh;
       width: 100vw;
       padding-top: 25%;
       transform-style: inherit;
@@ -42,11 +42,12 @@
         bottom: 0;
         top: 0;
         z-index: -1;
+        opacity: 0.65;
         transform-origin: center;
         min-height: 100vh;
-        background: url('../assets/main-banner.jpg') no-repeat;
+        background: url('../assets/main-banner.jpg') no-repeat fixed;
         background-size: cover;
-        transform: translateZ(-1px) scale(2);
+        /*<!--transform: translateZ(-1px) scale(2);-->*/
       }
 
     }
@@ -59,7 +60,7 @@
       left: 0;
       bottom: 0;
       right: 0;
-      transform: translateZ(-1px) scale(2);
+      transform: translateZ(-1px) scale(1);
       background-color: rgba(0, 0, 0, 0.3);
 
     }

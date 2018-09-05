@@ -27,9 +27,8 @@
 
 <style scoped>
   #services{
-    top: -15px;
     position: relative;
-    background-color: royalblue;
+    background-color: #f9ed37 ;
     z-index: 10;
   }
 </style>

@@ -27,14 +27,18 @@ export default {
 </script>
 
 <style>
-  html{
-    height: 100%;
+  @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Faster+One|Libre+Barcode+39+Extended+Text|Nosifer|Plaster|Bungee+Inline');
+  html,
+  body{
+    height: 3000px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     overflow-y: scroll;
   }
-  body{
-    overflow-y: scroll;
-    overflow-x: hidden;
+  /* width */
+  body::-webkit-scrollbar {
+    width: 0px;
   }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
