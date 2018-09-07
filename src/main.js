@@ -6,6 +6,8 @@ import App from './App'
 import router from './router'
 import jQuery from 'jquery'
 global.$ = jQuery;
+global.jQuery = jQuery;
+let lazylinepainter = require('lazy-line-painter');
 let Bootstrap = require('bootstrap');
 import 'bootstrap/dist/css/bootstrap.css'
 

@@ -30,7 +30,6 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Faster+One|Libre+Barcode+39+Extended+Text|Nosifer|Plaster|Bungee+Inline');
   html,
   body{
-    height: 3000px;
     margin: 0;
     padding: 0;
     overflow: hidden;
