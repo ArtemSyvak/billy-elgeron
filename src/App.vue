@@ -34,6 +34,7 @@ export default {
     padding: 0;
     overflow: hidden;
     overflow-y: scroll;
+
   }
   /* width */
   body::-webkit-scrollbar {
