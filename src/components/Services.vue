@@ -28,7 +28,7 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <button class="button">
-              <span>Hover me I'm awesome</span>
+              <span>Hover me I`m awesome </span>
             </button>
           </div>
         </div>
@@ -39,6 +39,12 @@
 <script>
     export default {
       name: "Services",
+      data(){
+        return{
+          x:'',
+          y:''
+        }
+      },
       mounted(){
         // this.hoverAnimation();
         this.drawSpotlight();
@@ -46,12 +52,12 @@
         this.drawDrone();
       },
       compile(){
-        this.hoverAnimation();
+        // this.hoverAnimation();
       },
-      methods:{
-        hoverAnimation:()=>{
-          document.querySelector('.button').onmousemove = (e) => {
 
+      methods:{
+        hoverAnimation(){
+          document.querySelector('.button').onmousemove = (e) => {
             const x = e.pageX - e.target.offsetLeft;
             const y = e.pageY - e.target.offsetTop;
 

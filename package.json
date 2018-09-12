@@ -15,6 +15,7 @@
     "express": "^4.16.3",
     "hamburgers": "^0.9.3",
     "jquery": "^3.3.1",
+    "lazy-line-painter": "^1.7.0",
     "popper.js": "^1.14.3",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
