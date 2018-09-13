@@ -27,7 +27,8 @@ export default {
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Faster+One|Libre+Barcode+39+Extended+Text|Nosifer|Plaster|Bungee+Inline');
+  @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|M+PLUS+Rounded+1c');
+
   html,
   body{
     margin: 0;
@@ -41,7 +42,7 @@ export default {
     width: 0px;
   }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

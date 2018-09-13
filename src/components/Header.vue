@@ -135,6 +135,7 @@ export default {
     padding: 0 100px;
     margin: 0;
     a{
+      font-family: 'M PLUS Rounded 1c', sans-serif;
       &.logo-name{
         font-family: 'Bungee Shade', cursive;
       }

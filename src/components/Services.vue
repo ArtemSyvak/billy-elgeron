@@ -1,38 +1,38 @@
 <template>
     <section id="services">
-      <div class="container">
-        <div class="row justify-content-center py-3">
-          <div class="col-4">
-            <h3 class="text-uppercase font-weight-bold display-5">Що ми робимо?</h3>
+      <div class="container py-5">
+        <div class="row justify-content-center py-5">
+          <div class="col-12 text-center">
+            <h3 class="text-uppercase  display-4">Чим ми займаємось</h3>
           </div>
         </div>
         <div class="row justify-content-center py-3">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <!--<img src="../assets/spotlight.svg" class="w-100" alt="">-->
             <div class="svg-animation" id="spotlight"></div>
-            <h4>Зйомка реклами</h4>
+            <h4 class="text-uppercase text-center display-5 py-3">Зйомка реклами</h4>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <!--<img src="../assets/typewriter.svg" class="w-100" alt="">-->
             <div class="svg-animation" id="typewriter"></div>
-            <h4>Написання сценаріїв</h4>
+            <h4 class="text-uppercase text-center display-5 py-3">Написання сценаріїв</h4>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <!--<img src="../assets/drone.svg" class="w-100" alt="">-->
             <div class="svg-animation" id="drone"></div>
-            <h4>Фотосети</h4>
+            <h4 class="text-uppercase text-center display-5 py-3">Фотосети</h4>
           </div>
         </div>
       </div>
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <button class="button">
-              <span>Hover me I`m awesome </span>
-            </button>
-          </div>
-        </div>
-      </div>
+      <!--<div class="container py-5">-->
+        <!--<div class="row justify-content-center">-->
+          <!--<div class="col-12">-->
+            <!--<button class="button">-->
+              <!--<span>Hover me I`m awesome </span>-->
+            <!--</button>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
     </section>
 </template>
 
@@ -343,8 +343,8 @@
     z-index: 10;
   }
   .svg-animation{
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: 170px;
     margin: 0 auto;
   }
 
