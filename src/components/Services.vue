@@ -1,5 +1,5 @@
 <template>
-    <section id="services">
+    <section id="services" class="pb-5">
       <div class="container py-5">
         <div class="row justify-content-center py-5">
           <div class="col-12 text-center">
@@ -7,17 +7,17 @@
           </div>
         </div>
         <div class="row justify-content-center py-3">
-          <div class="col-lg-4">
+          <div class="col-lg-4 p-4 svg-wrapper">
             <!--<img src="../assets/spotlight.svg" class="w-100" alt="">-->
             <div class="svg-animation" id="spotlight"></div>
             <h4 class="text-uppercase text-center display-5 py-3">Зйомка реклами</h4>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 p-4 svg-wrapper">
             <!--<img src="../assets/typewriter.svg" class="w-100" alt="">-->
             <div class="svg-animation" id="typewriter"></div>
             <h4 class="text-uppercase text-center display-5 py-3">Написання сценаріїв</h4>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 p-4 svg-wrapper">
             <!--<img src="../assets/drone.svg" class="w-100" alt="">-->
             <div class="svg-animation" id="drone"></div>
             <h4 class="text-uppercase text-center display-5 py-3">Фотосети</h4>
@@ -140,7 +140,7 @@
             {
               "svgData": pathObj,
               "strokeWidth": 10,
-              "strokeColor": "#000"
+              "strokeColor": "#fff"
             }).lazylinepainter('paint');
           // });
         },
@@ -191,7 +191,7 @@
               {
                 "svgData": pathObj,
                 "strokeWidth": 1,
-                "strokeColor": "#000"
+                "strokeColor": "#fff"
               }).lazylinepainter('paint');
           });
         },
@@ -286,7 +286,7 @@
               {
                 "svgData": pathObj,
                 "strokeWidth": 10,
-                "strokeColor": "#000"
+                "strokeColor": "#fff"
               }).lazylinepainter('paint');
           });
         }
@@ -334,9 +334,6 @@
     }
   }
 
-
-
-
   #services{
     position: relative;
     background-color: #f9ed37 ;
@@ -346,6 +343,17 @@
     width: 170px;
     height: 170px;
     margin: 0 auto;
+  }
+  .svg-wrapper{
+    transition: .4s;
+
+      &:hover{
+      -webkit-box-shadow: 0px 2px 33px 1px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 2px 33px 1px rgba(0,0,0,0.75);
+      box-shadow: 0px 2px 33px 1px rgba(0,0,0,0.75);
+      transform: translate3d(0px,-7px,30px);
+      transition: .4s;
+      }
   }
 
 </style>

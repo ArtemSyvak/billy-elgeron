@@ -5,11 +5,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import jQuery from 'jquery'
+import 'bootstrap/dist/css/bootstrap.css'
 global.$ = jQuery;
 global.jQuery = jQuery;
-let lazylinepainter = require('lazy-line-painter');
-let Bootstrap = require('bootstrap');
-import 'bootstrap/dist/css/bootstrap.css'
+// const nodemailer      = require('nodemailer');
+let   lazylinepainter = require('lazy-line-painter'),
+      Bootstrap       = require('bootstrap');
 
 Vue.config.productionTip = false
 
